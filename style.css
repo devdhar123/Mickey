@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.con{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 80px;
+}
+.container1{
+    width: 50%;
+    height: 23vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.container2{
+    width: 50%;
+    height: 23vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.circle1{
+    width: 30%;
+    height: 30vh;
+    clip-path: circle(48.4% at 50% 50%);
+    background-color: #0f0f0f;
+    margin-top: 80px;
+    margin-right: 50px;
+    transform: rotate(0deg);
+}
+.circle2{
+    width: 30%;
+    height: 30vh;
+    clip-path: circle(48.4% at 50% 50%);
+    background-color: #0f0f0f;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.big{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+.big-circle{
+    width: 40%;
+    height: 40vh;
+    clip-path: circle(30.4% at 50% 50%);
+    background-color: #0f0f0f;
+    position: relative;
+}
+.ellips1{
+    width: 100%;
+    height: 20vh;
+    background-color: #ffcbab;
+    clip-path: ellipse(16% 49% at 70% 56%);
+    transform: rotate(112deg) translateX(-16%) translateY(-32%);
+
+}
+.ellips2{
+    width: 100%;
+    height: 20vh;
+    background-color: #ffcbab;
+    clip-path: ellipse(16% 49% at 70% 56%);
+    transform: rotate(-115deg) translateX(-2%) translateY(9%);
+}
+.ell1{
+    width: 100%;
+    height: 15vh;
+    background-color: #ffcbab;
+    clip-path: ellipse(21% 47% at 50% 50%);
+    transform: rotate(-145deg) translateX(16%) translateY(57%)
+}
+.ell2{
+    width: 100%;
+    height: 15vh;
+    background-color: #ffcbab;
+    clip-path: ellipse(21% 47% at 50% 50%);
+    transform: rotate(-35deg) translateX(25%) translateY(-139%);
+}
+.nose{
+    width: 84%;
+    height: 50vh;
+    background-color: black;
+    clip-path: ellipse(8% 7% at 50% 50%);
+    transform: rotate(0deg) translateX(10%) translateY(-138%);
+}
+.tra{
+    width: 18%;
+    height: 43vh;
+    background-color: black;
+    clip-path: polygon(49% 43%, 100% 50%, 50% 45%, 0 50%);
+    transform: rotate(0deg) translateX(230%) translateY(-273%);
+}
+.eye1{
+    width: 101%;
+    height: 17vh;
+    background-color: black;
+    clip-path: ellipse(8% 18% at 38% 50%);
+    transform: rotate(92deg) translateX(-174%) translateY(11%);
+}
+.eye2{
+    width: 101%;
+    height: 17vh;
+    background-color: black;
+    clip-path: ellipse(8% 18% at 38% 50%);
+    transform: rotate(86deg) translateX(-194%) translateY(-47%);
+}
+.eye3{
+    width: 101%;
+    height: 17vh;
+    background-color: white;
+    position: relative;
+    animation: dev;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+    animation-iteration-count: infinite;
+    clip-path: ellipse(7% 14% at 38% 50%);
+    transform: rotate(92deg) translateX(-214%) translateY(18%);
+}
+.eye4{
+    width: 101%;
+    height: 17vh;
+    background-color: white;
+    position: relative;
+    animation: dev;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+    animation-iteration-count: infinite;
+    clip-path: ellipse(7% 14% at 38% 50%);
+    transform: rotate(86deg) translateX(-234%) translateY(-61%);
+}
+.blk1{
+    width: 17%;
+    height: 15vh;
+    background-color: #0f0f0f;
+    clip-path: ellipse(9% 20% at 38% 50%);
+    transform: rotate(89deg) translateX(26%) translateY(-174%)
+}
+.blk2{
+  
+    width: 17%;
+    height: 15vh;
+    background-color: #0f0f0f;
+    clip-path: ellipse(9% 20% at 38% 50%);
+    transform: rotate(89deg) translateX(18%) translateY(-174%);
+}
+.img{
+    width: 20%;
+    height: 20vh;
+    transform: rotate(89deg) translateX(18%) translateY(-174%);
+}
+.img{
+    display: flex;
+}
+.img img{
+    transform: rotate(270deg) translateX(13%) translateY(-1053%);
+    height: 20vh;
+    width: 122%;
+    position: relative;
+
+}
+@keyframes dev {
+	0%{
+		/* height: 10px; */
+        background-color: black;
+        
+	}
+	25% {
+        background-color:  black;
+		/* height: 5px; */
+	}
+	75%{
+        border-color: black;
+		/* height: 40px; */
+	}
+    100%{
+        border-color: black;
+
+	}
+}
